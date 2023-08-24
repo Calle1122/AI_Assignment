@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0016a0f0a6f162449261d600b348d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_myFancyColor: {r: 0.7292715, g: 1, b: 0.27735847, a: 1}
+  m_myFancyColor: {r: 1, g: 0.5157232, b: 0.5822627, a: 1}
 --- !u!1001 &3866579283987992696
 PrefabInstance:
   m_ObjectHideFlags: 0
