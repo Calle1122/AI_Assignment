@@ -5,13 +5,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FirstName_LastName
+namespace Carl_Lindstedt
 {
-    public class Unit_FirstName_LastName : Unit
+    public class Unit_Carl_Lindstedt : Unit
     {
         #region Properties
 
-        public new Team_FirstName_LastName Team => base.Team as Team_FirstName_LastName;
+        public new Team_Carl_Lindstedt Team => base.Team as Team_Carl_Lindstedt;
 
         #endregion
 
