@@ -24,7 +24,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962103230482467457}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -36,6 +35,7 @@ Transform:
   - {fileID: 8422537183071931936}
   - {fileID: 8071554571738843007}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3799361104022594528
 MonoBehaviour:
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0016a0f0a6f162449261d600b348d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_myFancyColor: {r: 0.5377358, g: 0, b: 0.44805712, a: 1}
+  m_myFancyColor: {r: 0.7292715, g: 1, b: 0.27735847, a: 1}
 --- !u!1001 &3866579283987992696
 PrefabInstance:
   m_ObjectHideFlags: 0
