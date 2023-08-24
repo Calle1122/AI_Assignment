@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 6901311057929576710}
   - component: {fileID: 5314277297386817821}
   m_Layer: 0
-  m_Name: Unit_FirstName_LastName
+  m_Name: Unit_Carl_Lindstedt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

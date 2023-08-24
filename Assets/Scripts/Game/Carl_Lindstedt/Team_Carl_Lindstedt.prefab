@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9190029663049054464}
   - component: {fileID: 3799361104022594528}
   m_Layer: 0
-  m_Name: Team_FirstName_LastName
+  m_Name: Team_Carl_Lindstedt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
