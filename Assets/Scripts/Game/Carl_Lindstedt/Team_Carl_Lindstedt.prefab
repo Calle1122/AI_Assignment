@@ -70,7 +70,6 @@ GameObject:
   - component: {fileID: 6225323078914171952}
   - component: {fileID: 3845564667466820912}
   - component: {fileID: 5575771749881051813}
-  - component: {fileID: 2327830145710484155}
   m_Layer: 0
   m_Name: MainFormationPoint
   m_TagString: Untagged
@@ -147,27 +146,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &2327830145710484155
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123544220637061825}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6635049921760058284
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +157,6 @@ GameObject:
   - component: {fileID: 2106462570637041702}
   - component: {fileID: 6405477532331660267}
   - component: {fileID: 279360362269972366}
-  - component: {fileID: 858112820013034253}
   m_Layer: 0
   m_Name: BackPoint1
   m_TagString: Untagged
@@ -252,27 +229,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &858112820013034253
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6635049921760058284}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7091276816695887031
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +240,6 @@ GameObject:
   - component: {fileID: 1233809858505928144}
   - component: {fileID: 2912262963889433786}
   - component: {fileID: 3796362679718312086}
-  - component: {fileID: 4054480739866382670}
   m_Layer: 0
   m_Name: SquadLeaderTargetPoint
   m_TagString: Untagged
@@ -357,27 +312,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4054480739866382670
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7091276816695887031}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7467278086750760470
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +323,6 @@ GameObject:
   - component: {fileID: 2750555345329118286}
   - component: {fileID: 1937811146127316844}
   - component: {fileID: 1700314254404326111}
-  - component: {fileID: 9076764333817741495}
   m_Layer: 0
   m_Name: BackPoint3
   m_TagString: Untagged
@@ -462,27 +395,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &9076764333817741495
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7467278086750760470}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8846414532379926795
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +406,6 @@ GameObject:
   - component: {fileID: 8240039938917842659}
   - component: {fileID: 7645910324545936671}
   - component: {fileID: 717435206526217727}
-  - component: {fileID: 6710845649761467790}
   m_Layer: 0
   m_Name: BackPoint2
   m_TagString: Untagged
@@ -567,27 +478,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6710845649761467790
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8846414532379926795}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9142008212176781102
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +489,6 @@ GameObject:
   - component: {fileID: 1258585958100704229}
   - component: {fileID: 4518486610741346838}
   - component: {fileID: 4751288065312219321}
-  - component: {fileID: 8632467259512150945}
   m_Layer: 0
   m_Name: BackPoint4
   m_TagString: Untagged
@@ -672,27 +561,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8632467259512150945
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9142008212176781102}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3866579283987992696
 PrefabInstance:
   m_ObjectHideFlags: 0

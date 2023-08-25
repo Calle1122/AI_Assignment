@@ -74,22 +74,33 @@ namespace Carl_Lindstedt
             Vector3 enemyAveragePosition = GetAveragePosition(enemyUnits);
             targetPoints[0].transform.LookAt(enemyAveragePosition, transform.up);
 
-            //Update the squad leaders target position
-            switch (ShouldRegroup())
+            //HARD RETREAT if: team is too close to enemy team
+            if (friendlyUnits[0].EnemiesInRange.Count() > 1)
             {
-                //Move towards team
-                case true:
-                    squadLeaderTargetPoint.transform.position = GetAveragePosition(friendlyUnits);
-                    break;
-
-                //Move normally
-                case false:
-                    List<Unit> allAliveUnits = new List<Unit>();
-                    allAliveUnits.AddRange(friendlyUnits);
-                    allAliveUnits.AddRange(enemyUnits);
-                    squadLeaderTargetPoint.transform.position = GetAveragePosition(allAliveUnits);
-                    break;
+                Vector3 retreatTargetPos = (GetAveragePosition(friendlyUnits) - enemyAveragePosition).normalized;
+                squadLeaderTargetPoint.transform.position += retreatTargetPos*Time.deltaTime;
             }
+            //Else: Do normal movement calculations...
+            else
+            {
+                //Update the squad leaders target position
+                switch (ShouldRegroup())
+                {
+                    //Move towards team
+                    case true:
+                        squadLeaderTargetPoint.transform.position = GetAveragePosition(friendlyUnits);
+                        break;
+
+                    //Move normally
+                    case false:
+                        List<Unit> allAliveUnits = new List<Unit>();
+                        allAliveUnits.AddRange(friendlyUnits);
+                        allAliveUnits.AddRange(enemyUnits);
+                        squadLeaderTargetPoint.transform.position = GetAveragePosition(allAliveUnits);
+                        break;
+                }
+            }
+            
 
             //Set last known number of alive friendlies
             lastFrameAliveFriendlies = friendlyUnits.Count;
