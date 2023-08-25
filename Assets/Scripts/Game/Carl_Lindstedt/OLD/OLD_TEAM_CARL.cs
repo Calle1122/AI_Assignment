@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace Carl_Lindstedt
 {
-    public class Team_Carl_Lindstedt : Team
+    public class OLD_TEAM_CARL : Team
     {
         [SerializeField] private Color m_myFancyColor;
 
@@ -38,7 +38,7 @@ namespace Carl_Lindstedt
             //Set the units formation numbers to their new positions
             for (int i = 0; i < friendlyUnits.Count; i++)
             {
-                Unit_Carl_Lindstedt myUnit = friendlyUnits[i] as Unit_Carl_Lindstedt;
+                OLD_UNIT_CARL myUnit = friendlyUnits[i] as OLD_UNIT_CARL;
                 myUnit.FormationNumber = i;
             }
         }
@@ -157,7 +157,7 @@ namespace Carl_Lindstedt
             //Set the units formation numbers to their new positions
             for (int i = 0; i < friendlyUnits.Count; i++)
             {
-                Unit_Carl_Lindstedt myUnit = friendlyUnits[i] as Unit_Carl_Lindstedt;
+                OLD_UNIT_CARL myUnit = friendlyUnits[i] as OLD_UNIT_CARL;
                 myUnit.FormationNumber = i;
             }
         }
@@ -199,7 +199,7 @@ namespace Carl_Lindstedt
             return (averageVector / unitsToAverage.Count);
         }
 
-        public GraphUtils.Path GetShortestPath(Battlefield.Node start, Battlefield.Node goal)
+        public GraphUtils.Path OldGetShortestPath(Battlefield.Node start, Battlefield.Node goal)
         {
             if (start == null ||
                 goal == null ||

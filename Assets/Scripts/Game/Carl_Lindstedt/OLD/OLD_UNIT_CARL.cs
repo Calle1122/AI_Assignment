@@ -7,13 +7,13 @@ using UnityEngine;
 
 namespace Carl_Lindstedt
 {
-    public class Unit_Carl_Lindstedt : Unit
+    public class OLD_UNIT_CARL : Unit
     {
         private int m_formationNumber;
         
         #region Properties
 
-        public new Team_Carl_Lindstedt Team => base.Team as Team_Carl_Lindstedt;
+        public new OLD_TEAM_CARL Team => base.Team as OLD_TEAM_CARL;
 
         public int FormationNumber
         {
@@ -36,17 +36,17 @@ namespace Carl_Lindstedt
 
         protected override GraphUtils.Path GetPathToTarget()
         {
-            return Team.GetShortestPath(CurrentNode, TargetNode);
+            return Team.OldGetShortestPath(CurrentNode, TargetNode);
         }
 
         protected override void Start()
         {
             base.Start();
 
-            StartCoroutine(PathfindingLogic());
+            StartCoroutine(OldPathfindingLogic());
         }
 
-        IEnumerator PathfindingLogic()
+        IEnumerator OldPathfindingLogic()
         {
             while (true)
             {
