@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9190029663049054464}
   - component: {fileID: 3799361104022594528}
+  - component: {fileID: 2860700053826523431}
   m_Layer: 0
   m_Name: Team_Carl_Lindstedt
   m_TagString: Untagged
@@ -51,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0016a0f0a6f162449261d600b348d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_myFancyColor: {r: 1, g: 0.5157232, b: 0.5822627, a: 1}
+  m_myFancyColor: {r: 1, g: 0.5896226, b: 0.84811896, a: 1}
   squadLeaderTargetPoint: {fileID: 7091276816695887031}
   targetPoints:
   - {fileID: 2123544220637061825}
@@ -59,6 +60,51 @@ MonoBehaviour:
   - {fileID: 8846414532379926795}
   - {fileID: 7467278086750760470}
   - {fileID: 9142008212176781102}
+--- !u!114 &2860700053826523431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962103230482467457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818b8c9005dbed445a269a1fcf86ccac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialToLerp: {fileID: 2100000, guid: bbe773d1eda029e48977e51edfd35bb6, type: 2}
+  lerpSpeed: 0.5
+  colors:
+    serializedVersion: 2
+    key0: {r: 1, g: 0.57161915, b: 0, a: 1}
+    key1: {r: 1, g: 0, b: 0.5135951, a: 1}
+    key2: {r: 0.513772, g: 0, b: 1, a: 0}
+    key3: {r: 0, g: 0.5125196, b: 1, a: 0}
+    key4: {r: 0, g: 1, b: 0.6912031, a: 0}
+    key5: {r: 0.111111164, g: 1, b: 0, a: 0}
+    key6: {r: 1, g: 0.8291509, b: 0, a: 0}
+    key7: {r: 1, g: 0.4541185, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 9830
+    ctime2: 18311
+    ctime3: 26985
+    ctime4: 36237
+    ctime5: 45875
+    ctime6: 55127
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 2
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  repeatable: 1
 --- !u!1 &2123544220637061825
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +149,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123544220637061825}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!23 &5575771749881051813
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -186,7 +232,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6635049921760058284}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!23 &279360362269972366
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -269,7 +315,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7091276816695887031}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!23 &3796362679718312086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -352,7 +398,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7467278086750760470}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!23 &1700314254404326111
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -435,7 +481,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8846414532379926795}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!23 &717435206526217727
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -518,7 +564,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9142008212176781102}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!23 &4751288065312219321
 MeshRenderer:
   m_ObjectHideFlags: 0
