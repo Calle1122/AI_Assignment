@@ -106,18 +106,21 @@ namespace Carl_Lindstedt
             lastFrameAliveFriendlies = friendlyUnits.Count;
         }
 
+        //Returns a list of alive friendly units
         public List<Unit> GetFriendlyTeamList()
         {
             List<Unit> newFriendlyUnits = new List<Unit>(Units);
             return newFriendlyUnits;
         }
 
+        //Returns a list of alive enemy units
         public List<Unit> GetEnemyTeamList()
         {
             List<Unit> enemyUnits = new List<Unit>(EnemyTeam.Units);
             return enemyUnits;
         }
 
+        //Method used to assign formation numbers to alive units
         public void ShuffleFormation()
         {
             List<Unit> newUnitFormation = new List<Unit>();
@@ -173,7 +176,7 @@ namespace Carl_Lindstedt
             }
         }
 
-        //Check if the team units are too far away from each other
+        //Check if the team units are too far away from each other... if so return true
         public bool ShouldRegroup()
         {
             if (friendlyUnits.Count < 1)
@@ -182,6 +185,7 @@ namespace Carl_Lindstedt
             }
             Vector3 unitPosition = friendlyUnits[0].transform.position;
 
+            //If any unit is further than 5 units from the leader, team should regroup
             foreach (var unit in friendlyUnits)
             {
                 if (Vector3.Distance(unitPosition, unit.transform.position) > 5)
@@ -193,6 +197,7 @@ namespace Carl_Lindstedt
             return false;
         }
 
+        //Returns the average position of list of units
         public Vector3 GetAveragePosition(List<Unit> unitsToAverage)
         {
             if (unitsToAverage.Count == 0)
